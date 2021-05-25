@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>会話</title>
+    <link rel="stylesheet" href="zxc.css">
+  </head>
+  <body>
+    <div class="answer">
+      <% @pgs.each do|dt| %>
+        <h3><%= dt %></h3>
+      <% end %>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+    <div class="question">
+      <h1>会話</h1><br>
+      <h3><%= @que %></h3>
+      <h3>あなた：</h3>
+      <%= form_tag("/conversation/next") do %>
+        <input name="answer" size="45" autofocus>
+        <input type="submit" value="答え">
+      <% end %>
+    </div>
+    <div class="com_ret">
+      <%= link_to("戻る","/") %>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+.answer{
+  float:left;
+  border:2px solid blue;
+  background-color:orange;
+  width:350px;
+  height:730px;
+  line-height:0;
+  margin-left:150px;
+  padding-left:10px;
+}
+.question{
+  margin:0 auto;
+  border:5px solid orange;
+  background-color:cyan;
+  width:350px;
+  padding:10px;
+}
+.question h1{
+  text-align:center;
+}
+.com_ret{
+  margin:50px 0 0 900px;
+}
